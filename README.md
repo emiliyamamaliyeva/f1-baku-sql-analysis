@@ -32,6 +32,7 @@ f1-baku-sql-analysis/
 └── queries/                -- analytical SQL queries
     ├── 01_winners_baku.sql
     └── 02_constructors_points_baku.sql
+    └── 03_grid_vs_finish_baku.sql
 ```
 
 ## Queries and Findings
@@ -62,3 +63,21 @@ f1-baku-sql-analysis/
 | Ferrari | 133 |
 
 **Finding:** Red Bull leads the all-time constructor points table at Baku, narrowly ahead of Mercedes — despite Mercedes having more individual race wins in the circuit's early years (2017–2018).
+
+### 3. Grid vs finishing position at the Azerbaijan Grand Prix
+[queries/03_grid_vs_finish_baku.sql](queries/03_grid_vs_finish_baku.sql)
+
+| Driver | Year | Grid | Finish | Positions Gained |
+|--------|------|------|--------|-------------------|
+| Lando Norris | 2024 | 15 | 4 | +11 |
+| Fernando Alonso | 2017 | 19 | 9 | +10 |
+| Daniel Ricciardo | 2017 | 10 | 1 | +9 |
+
+| Driver | Year | Grid | Finish | Positions Lost |
+|--------|------|------|--------|-----------------|
+| Charles Leclerc | 2022 | 1 | 19 | -18 |
+| Robert Kubica | 2019 | 0 | 16 | -16 |
+| Pierre Gasly | 2019 | 0 | 17 | -17 |
+
+**Finding:** Baku produces some of the largest position swings on the calendar in both directions — a mix of big passing opportunities on the long main straight and a high crash/safety-car rate on its narrow street-circuit walls. Charles Leclerc's 2022 race stands out: he started on pole and finished 19th after a power unit failure.
+
