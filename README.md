@@ -27,18 +27,38 @@ Full schema: [schema.sql](schema.sql)
 ```
 f1-baku-sql-analysis/
 ├── README.md
-├── schema.sql              -- создание всех таблиц
-├── data/                   -- исходные CSV с Kaggle
-└── queries/                -- аналитические SQL-запросы
-    └── 01_winners_baku.sql
+├── schema.sql              -- creates all tables
+├── data/                   -- raw CSV files from Kaggle
+└── queries/                -- analytical SQL queries
+    ├── 01_winners_baku.sql
+    └── 02_constructors_points_baku.sql
 ```
+
 ## Queries and Findings
 
 ### 1. Azerbaijan Grand Prix winners by year
 [queries/01_winners_baku.sql](queries/01_winners_baku.sql)
 
-*Findings will be added here once the query is run.*
+| Year | Winner |
+|------|--------|
+| 2017 | Daniel Ricciardo |
+| 2018 | Lewis Hamilton |
+| 2019 | Valtteri Bottas |
+| 2021 | Sergio Pérez |
+| 2022 | Max Verstappen |
+| 2023 | Sergio Pérez |
+| 2024 | Oscar Piastri |
+| 2025 | Max Verstappen |
 
----
+**Finding:** No driver has won at Baku twice in a row — 8 different winners across 8 races, making it one of the least predictable circuits on the calendar. (Note: 2016 is excluded since the race was branded the "European Grand Prix" that year, and 2020 was cancelled due to COVID-19.)
 
-*Project in progress — queries are added as they're completed.*
+### 2. Total constructor points at the Azerbaijan Grand Prix
+[queries/02_constructors_points_baku.sql](queries/02_constructors_points_baku.sql)
+
+| Constructor | Total Points |
+|-------------|--------------|
+| Red Bull | 192 |
+| Mercedes | 183 |
+| Ferrari | 133 |
+
+**Finding:** Red Bull leads the all-time constructor points table at Baku, narrowly ahead of Mercedes — despite Mercedes having more individual race wins in the circuit's early years (2017–2018).
