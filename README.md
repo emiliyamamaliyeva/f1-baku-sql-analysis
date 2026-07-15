@@ -104,3 +104,12 @@ f1-baku-sql-analysis/
 Uses a subquery to find all drivers who have won at Baku, then shows every Baku race they've competed in.
 
 **Finding:** The pool of Baku winners is a small, consistent core — Hamilton, Bottas, Verstappen and Pérez have appeared in almost every Baku race since 2017, which likely explains why they also account for most of the wins and podiums there.
+
+## Conclusion
+
+This project took me from raw CSV files to a working relational database and a set of SQL queries answering real questions about race data. Along the way I practiced:
+- Designing a normalized schema with primary and foreign keys
+- Handling messy real-world data (mixed NULL formats, non-standard time formats)
+- Multi-table JOINs, GROUP BY with aggregate functions, and subqueries
+
+Overall, the Azerbaijan Grand Prix stands out as one of the most unpredictable and chaotic street circuits on the F1 calendar — reflected in its wide spread of winners, the large position swings between grid and finish, and a small, recurring group of drivers who consistently perform well there.
