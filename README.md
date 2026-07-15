@@ -31,8 +31,9 @@ f1-baku-sql-analysis/
 ├── data/                   -- raw CSV files from Kaggle
 └── queries/                -- analytical SQL queries
     ├── 01_winners_baku.sql
-    └── 02_constructors_points_baku.sql
-    └── 03_grid_vs_finish_baku.sql
+    ├── 02_constructors_points_baku.sql
+    ├── 03_grid_vs_finish_baku.sql
+    └── 04_podiums_baku.sql
 ```
 
 ## Queries and Findings
@@ -80,4 +81,19 @@ f1-baku-sql-analysis/
 | Pierre Gasly | 2019 | 0 | 17 | -17 |
 
 **Finding:** Baku produces some of the largest position swings on the calendar in both directions — a mix of big passing opportunities on the long main straight and a high crash/safety-car rate on its narrow street-circuit walls. Charles Leclerc's 2022 race stands out: he started on pole and finished 19th after a power unit failure.
+
+### 4. Podium finishes per driver at the Azerbaijan Grand Prix
+[queries/04_podiums_baku.sql](queries/04_podiums_baku.sql)
+
+| Driver | Podiums |
+|--------|---------|
+| Sergio Pérez | 4 |
+| George Russell | 3 |
+| Max Verstappen | 3 |
+| Valtteri Bottas | 2 |
+| Charles Leclerc | 2 |
+| Lewis Hamilton | 2 |
+| Sebastian Vettel | 2 |
+
+**Finding:** Sergio Pérez has the most podiums of any driver at Baku (4), well ahead of the field — earning him a reputation among fans as one of the strongest performers on this specific street circuit.
 
