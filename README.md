@@ -33,7 +33,8 @@ f1-baku-sql-analysis/
     ├── 01_winners_baku.sql
     ├── 02_constructors_points_baku.sql
     ├── 03_grid_vs_finish_baku.sql
-    └── 04_podiums_baku.sql
+    ├── 04_podiums_baku.sql
+    └── 05_baku_winners_history_subquery.sql
 ```
 
 ## Queries and Findings
@@ -97,3 +98,9 @@ f1-baku-sql-analysis/
 
 **Finding:** Sergio Pérez has the most podiums of any driver at Baku (4), well ahead of the field — earning him a reputation among fans as one of the strongest performers on this specific street circuit.
 
+### 5. Baku history of drivers who have won there (subquery)
+[queries/05_baku_winners_history_subquery.sql](queries/05_baku_winners_history_subquery.sql)
+
+Uses a subquery to find all drivers who have won at Baku, then shows every Baku race they've competed in.
+
+**Finding:** The pool of Baku winners is a small, consistent core — Hamilton, Bottas, Verstappen and Pérez have appeared in almost every Baku race since 2017, which likely explains why they also account for most of the wins and podiums there.
